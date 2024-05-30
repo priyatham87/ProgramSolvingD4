@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-4</title>
+</head>
+<body>
+    <pre>
+        a="-210";
+        b=a;
+        rev=0;
+        if(b[0]=="-")
+        {
+            b=b*-1   
+        }
+        while(b!=0)
+        {
+            rem=b%10;
+            rev=rev*10+rem;
+            b=Math.floor(b/10);
+        }
+        if(a<0)
+        {
+            rev=rev*-1;
+            console.log(a+ reverse of +rev);
+        }
+        else
+        {
+            console.log(rev);
+        }
+        <p>output:-12</p>
+        var a=121;
+        var temp=a;
+        rev=0;
+        while(a!=0)
+        {
+            rem=a%10;
+            rev=rev*10+rem;
+            a=Math.floor(a/10);
+        }
+        if(temp==rev)
+        {
+            console.log(temp+" is a palindrome");
+        }
+        else
+        {
+            console.log(temo+" not a palindrome");
+        }
+        <p>output:121 is palindrome</p>
+
+        var a=487;
+        var temp=a;
+        rev=0;
+        while(a!=0)
+        {
+            rem=a%10;
+            rev=rev*10+rem;
+            a=Math.floor(a/10);
+        }
+        if(temp==rev)
+        {
+            console.log(temp+" is a palindrome");
+        }
+        else
+        {
+            console.log(temp+" not a palindrome");
+        }
+        <p>output:487 is not palindrome</p>
+
+       
+    </pre>
+    <script>
+        //reverse a positive number 
+        var n=218;
+        var temp=n;
+        var rev=0;
+        while(n>0)
+        {
+           var rem=n%10;
+            rev=rev*10+rem;
+            n=Math.floor(n/10);
+        }
+        console.log(rev+" reverse number of "+temp);
+
+        //reverse a negative number
+        a="-210";
+        b=a;
+        rev=0;
+        if(b[0]=="-")
+        {
+            b=b*-1   
+        }
+        while(b!=0)
+        {
+            rem=b%10;
+            rev=rev*10+rem;
+            b=Math.floor(b/10);
+        }
+        if(a<0)
+        {
+            rev=rev*-1;
+            console.log(a+" reverse of "+rev);
+        }
+        else
+        {
+            console.log(rev);
+        }
+
+        //find min and max digit in a number and concat min max and rest og digits
+        //input: 13675
+        //output: 17365
+        var num=prompt("enter anumber to find min max digits")
+        min=num[0];
+        max=num[0];
+        temp=""
+        for(i=1;i<num.length;i++)
+        {
+            if(num[i]<min)
+            {
+                min=num[i];   
+            }
+            
+            if(num[i]>max)
+            {
+                max=num[i];
+            }
+        }
+        for(i=0;i<num.length;i++)
+        {
+            if(num[i]!=min && num[i]!=max)
+            {
+                temp=temp+num[i]
+
+            }
+        }
+        console.log(min+max+temp);
+       
+
+
+        //palindrome
+        var a=121;
+        var temp=a;
+        rev=0;
+        while(a!=0)
+        {
+            rem=a%10;
+            rev=rev*10+rem;
+            a=Math.floor(a/10);
+        }
+        if(temp==rev)
+        {
+            console.log(temp+" is a palindrome");
+        }
+        else
+        {
+            console.log(temo+" not a palindrome");
+        }
+
+        var a=487;
+        var temp=a;
+        rev=0;
+        while(a!=0)
+        {
+            rem=a%10;
+            rev=rev*10+rem;
+            a=Math.floor(a/10);
+        }
+        if(temp==rev)
+        {
+            console.log(temp+" is a palindrome");
+        }
+        else
+        {
+            console.log(temp+" not a palindrome");
+        }
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
